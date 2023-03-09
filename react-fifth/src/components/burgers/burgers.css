@@ -1,0 +1,78 @@
+/*
+section#burgers{
+    height: 100vmax;
+}
+*/
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.burger{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(34, 34, 34);
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.burger img{
+    width: 150px;
+    border-radius: .5rem;
+    transition: .5s ;
+}
+
+.burger p{
+    text-align: justify;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Phudu', cursive;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.burger-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .5rem;
+}
+
+.card-img{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.burger button{
+    background-color: #eb5f39;
+    border: none;
+    outline: none;
+    padding: .3rem;
+    border-radius: .5rem;
+    color: #ffe4c6;
+}
+
+.add{
+    
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+    .burger img{
+        width: 100px;
+    }
+ 
+    .image{
+        width: 100px;
+        height: 90.28px;
+    }
+
+    .burger img:active{
+        position: fixed;
+        top: 30%;
+        right: 24%;
+        width: 250px;
+    }
+}

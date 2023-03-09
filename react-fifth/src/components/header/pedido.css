@@ -1,0 +1,125 @@
+.sacola{
+    cursor: pointer;
+}
+
+.sacola img{
+    width: 38px;
+}
+
+.sacola-quant{
+    background-color: #ED4314;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-family: 'Phudu', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    padding-top: 5.8px;
+}
+
+.sacola-main:hover~.sacola-quant{
+    background-color: #eb5f39;
+}
+
+.items{
+    background-color: #eb5f39;
+    position: absolute;
+    top: 6.5rem;
+    right: 1rem;
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+.sacola-main{
+    display: flex;
+    position: fixed;
+    top: 3rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    gap: .5rem  ;
+    flex-direction: column;
+    background-color: rgb(22, 22, 22);
+    backdrop-filter: blur(1px);
+    color: #FEEDD9;
+    width: max-content;
+    padding: 1rem;
+    position: fixed;
+    top: 6rem;
+    right: 1rem;
+    z-index: 1000;
+    animation: open-items .5s forwards ease-in-out;
+    border-radius: .5rem;
+    cursor: auto;
+    border: 2px solid #ed4314a8;
+}
+
+.show ul{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    background-color: #FEEDD9;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+.show li{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: .5rem;
+    border-bottom: 1px solid black;
+    padding: .5rem 0;
+}
+
+.show button{
+    background-color: black;
+    color: #eb5f39;
+    border: none;
+    padding: .2rem .3rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+ul~button{
+    font-size: 1rem;
+}
+
+@keyframes open-items {
+    0%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
+
+.close-items{
+    animation: close-items .5s forwards ease-in-out;
+}
+
+@keyframes close-items {
+    0%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/*===================== Responsive for Medium ====================*/
+@media screen and (max-width: 1000px){
+    .sacola-main{
+        top: 1.5rem;
+    }
+}

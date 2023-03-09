@@ -1,0 +1,61 @@
+nav .hidden{
+    opacity: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>a div{
+    color: #FEEDD9;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 6px;
+    border: 3px solid #ffe4c6;
+    outline: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 500ms ease;
+    display: flex;
+    align-items: center;background-color: #00000083;
+}
+
+nav>a{    
+    font-size: 1.2rem;
+}
+
+nav>a div:hover{
+    border: 3px solid #eb5f39;
+    
+}
+
+a span{
+    color: #ED4314;
+    
+}
+
+a span, svg{
+    height: 24px;
+}
+
+a svg{
+    font-size: 24px;
+}
+
+a aside{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 3px;
+}
+
+nav#normal{
+    display: flex;
+}
+
+/*===================== Responsive for Medium ====================*/
+@media screen and (max-width: 550px){
+    nav#normal{
+        display: none;
+    }
+}

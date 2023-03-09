@@ -1,0 +1,64 @@
+.logo{
+    padding: 20px 0 20px 20px;
+}
+
+.logo>img{
+    padding-top: 15px;
+    width: 250px;
+}
+
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to bottom, black, transparent);
+    backdrop-filter: blur(10px);
+}
+
+@media only screen and (min-width: 550px) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    section{
+        padding-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .logo{
+        justify-self: center;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .logo{
+        justify-self: flex-start;
+    }
+
+    .logo img{
+        width: 170px;
+        
+        padding: 1.5rem 0 0 1rem;
+    }
+
+    section{
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1000){
+    .sacola-main{
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        z-index: 1000;
+    }
+}
