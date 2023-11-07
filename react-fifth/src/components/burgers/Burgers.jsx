@@ -13,22 +13,23 @@ import Empire from './fifth-burgers/empire.jpeg'
 import Cheesesquare from './fifth-burgers/cheese-square.jpeg'
 import Neworleans from './fifth-burgers/new-orleans.jpeg'
 import {BsFillDiamondFill} from 'react-icons/bs'
+import SacolaAdd from '../../assets/sacola+.png'
 
 function Burgers(props) {
   const { adicionarItem } = props;
 
   const [burgers, setBurgers] = useState([
-    { id: 1, nome: 'Cheese Burger', preco: 14.90 },
-    { id: 2, nome: 'Bronx Salad', preco: 25.90 },
-    { id: 3, nome: 'Manhatan', preco: 25.90 },
-    { id: 4, nome: 'Texas BBQ', preco: 26.90 },
-    { id: 5, nome: 'Onion Queens', preco: 26.90 },
-    { id: 6, nome: 'Cheddar-Land', preco: 27.90 },
-    { id: 7, nome: 'Gorgon York', preco: 29.90 },
-    { id: 8, nome: 'Hawaii', preco: 29.90 },
-    { id: 9, nome: 'Cheese Square', preco: 33.90 },
-    { id: 10, nome: 'Empire State', preco: 34.90 },
-    { id: 11, nome: 'New Orleans', preco: 36.90 },
+    { id: 1, name: 'Cheese Burger', price: 14.90 },
+    { id: 2, name: 'Bronx Salad', price: 25.90 },
+    { id: 3, name: 'Manhatan', price: 25.90 },
+    { id: 4, name: 'Texas BBQ', price: 26.90 },
+    { id: 5, name: 'Onion Queens', price: 26.90 },
+    { id: 6, name: 'Cheddar-Land', price: 27.90 },
+    { id: 7, name: 'Gorgon York', price: 29.90 },
+    { id: 8, name: 'Hawaii', price: 29.90 },
+    { id: 9, name: 'Cheese Square', price: 33.90 },
+    { id: 10, name: 'Empire State', price: 34.90 },
+    { id: 11, name: 'New Orleans', price: 36.90 },
   ]);
 
   const handleClick = (id) => {
@@ -50,7 +51,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <div className="image"><img src={Cheeseburger} alt="Cheese-Burger" /></div>
-            <button onClick={() => handleClick(1)}>+ Add</button>
+            <button onClick={() => handleClick(1)}> <img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -62,7 +63,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Bronxsalad} alt="Bronx-salad" />
-            <button onClick={() => handleClick(2)}>+ Add</button>
+            <button onClick={() => handleClick(2)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -74,7 +75,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Manhatan} alt="Manhatan" />
-            <button onClick={() => handleClick(3)}>+ Add</button>
+            <button onClick={() => handleClick(3)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -86,7 +87,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Hawaii} alt="Texas" />
-            <button onClick={() => handleClick(4)}>+ Add</button>
+            <button onClick={() => handleClick(4)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -98,7 +99,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Onionqueens} alt="Onion-queens" />
-            <button onClick={() => handleClick(5)}>+ Add</button>
+            <button onClick={() => handleClick(5)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -110,7 +111,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Cheddarland} alt="Cheddarland" />
-            <button onClick={() => handleClick(6)}>+ Add</button>
+            <button onClick={() => handleClick(6)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -122,7 +123,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Gorgonyork} alt="Gorgonyork" />
-            <button onClick={() => handleClick(7)}>+ Add</button>
+            <button onClick={() => handleClick(7)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -134,7 +135,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Hawaii} alt="Hawaii" />
-            <button onClick={() => handleClick(8)}>+ Add</button>
+            <button onClick={() => handleClick(8)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -146,7 +147,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Cheesesquare} alt="Cheese-Square" />
-            <button onClick={() => handleClick(9)}>+ Add</button>
+            <button onClick={() => handleClick(9)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -158,7 +159,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Empire} alt="Empire-State" />
-            <button onClick={() => handleClick(10)}>+ Add</button>
+            <button onClick={() => handleClick(10)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
 
@@ -170,7 +171,7 @@ function Burgers(props) {
           </div>
           <div className="card-img">
             <img src={Neworleans} alt="New-Orleans" />
-            <button onClick={() => handleClick(11)}>+ Add</button>
+            <button onClick={() => handleClick(11)}><img src={SacolaAdd}/> <span>Add</span></button>
           </div>
         </div>
         

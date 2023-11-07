@@ -1,22 +1,26 @@
-/*
-section#burgers{
-    height: 100vmax;
-}
-*/
+
 .cardapio{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
+}
+
+.cardapio h1{
+    margin: auto;
 }
 
 .burger{
     display: flex;
     flex-direction: row;
     background-color: rgb(34, 34, 34);
+    /*background-color: #fff0dede;*/
     padding: 1rem;
     justify-content: space-between;
-    gap: 1rem;
     align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
 }
 
 .burger img{
@@ -28,15 +32,14 @@ section#burgers{
 .burger p{
     text-align: justify;
     font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Phudu', cursive;
-    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
 }
 
 .burger-info{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .card-img{
@@ -46,17 +49,35 @@ section#burgers{
 }
 
 .burger button{
-    background-color: #eb5f39;
-    border: none;
+    background-color: #141414;
+    border: solid 3px #ffe4c6;
     outline: none;
     padding: .3rem;
     border-radius: .5rem;
     color: #ffe4c6;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1rem;
 }
 
-.add{
-    
-    cursor: pointer;
+.burger button:hover{
+    background-color: #14141400;
+    color: white;
+    border: solid 3px #eb5f39;
+}
+
+.burger button:active{
+    border: solid 3px #222222;
+    font-size: 10px;
+}
+
+.burger button>img{
+    width: 1.1rem;
+    border-radius: 0px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -68,11 +89,7 @@ section#burgers{
         width: 100px;
         height: 90.28px;
     }
-
-    .burger img:active{
-        position: fixed;
-        top: 30%;
-        right: 24%;
-        width: 250px;
+    .burger{
+        gap: 1rem;
     }
 }

@@ -1,0 +1,9 @@
+#porcoes{
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    #porcoes{
+        margin-bottom: 8rem;
+    }
+}

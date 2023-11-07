@@ -1,9 +1,12 @@
-.sacola{
-    cursor: pointer;
+
+.sacola-main>img:hover{
+    box-shadow: 0px 0px 10px #ED4314;
 }
 
 .sacola img{
     width: 38px;
+    cursor: pointer;
+    transition: all 200ms;
 }
 
 .sacola-quant{
@@ -17,10 +20,6 @@
     justify-content: center;
     padding: 8px;
     padding-top: 5.8px;
-}
-
-.sacola-main:hover~.sacola-quant{
-    background-color: #eb5f39;
 }
 
 .items{
@@ -63,6 +62,7 @@
     border-radius: .5rem;
     cursor: auto;
     border: 2px solid #ed4314a8;
+    overflow: hidden;
 }
 
 .show ul{

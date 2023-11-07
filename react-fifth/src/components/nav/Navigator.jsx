@@ -48,14 +48,6 @@ const Navigator = () => {
       </div>
       </a>
 
-      <a href="#combos" className="nav-link">
-        <div onClick={() => setActiveNav('#combos')} className={activeNav === '#combos' ? 'active' : ''}>
-          <span className="material-symbols-outlined">
-            fastfood
-          </span><aside>COMBOS</aside>
-        </div>
-      </a>
-
       <a href="#bebidas" className="nav-link">
         <div onClick={() => setActiveNav('#bebidas')} className={activeNav === '#bebidas' ? 'active' : ''}><span><BiCoffeeTogo/></span><aside>BEBIDAS</aside></div>
       </a>

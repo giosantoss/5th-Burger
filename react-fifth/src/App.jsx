@@ -76,7 +76,7 @@ function App() {
         }
       })
     }, {
-      threshold: 0.1,
+      threshold: 0.05,
       rootMargin: '-100px 0px -200px 0px'
     })
   
@@ -86,8 +86,6 @@ function App() {
   
     return () => observer.disconnect()
   }, [])
-  
-  
 
   return (
     <div id='root'>
@@ -101,14 +99,11 @@ function App() {
         <div id='burgers' className='section'>
           <Burgers adicionarItem={adicionarItem} cartItems={cartItems}/>
         </div>
-        <div id='combos' className='section'>
-          <Combos/>
-        </div>
         <div id='bebidas' className='section'>
-          <Bebidas/>
+          <Bebidas adicionarItem={adicionarItem} cartItems={cartItems}/>
         </div>
         <div id='porcoes' className='section'>
-          <Porcoes/>
+          <Porcoes adicionarItem={adicionarItem} cartItems={cartItems}/>
         </div>
     </div>
  

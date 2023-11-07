@@ -3,9 +3,9 @@ import '../teste.css'
 
 const Bebidasteste = (props) => {
   const [bebidas, setBebidas] = useState([
-    { id: 1, nome: 'Coca-Cola', preco: 5 },
-    { id: 2, nome: 'Fanta', preco: 5 },
-    { id: 3, nome: 'Guaraná', preco: 5 },
+    { id: 1, name: 'Coca-Cola', price: 5 },
+    { id: 2, name: 'Fanta', price: 5 },
+    { id: 3, name: 'Guaraná', price: 5 },
   ]);
 
   const handleClick = (item) => {
@@ -19,7 +19,7 @@ const Bebidasteste = (props) => {
         <ul>
             {bebidas.map((bebida) => (
             <li key={bebida.id}>
-                {bebida.nome} - R$ {bebida.preco}
+                {bebida.name} - R$ {bebida.price}
                 <button onClick={() => handleClick(bebida)}>Adicionar</button>
             </li>
             ))}

@@ -22,20 +22,6 @@ const Nav = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-/*
-  const linkToSection = new Map();
-  const navLinks = document.querySelectorAll('.nav-link');
-
-  navLinks.forEach(link => {
-    const sectionId = link.hash.slice(1);
-    linkToSection.set(sectionId, link);
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const section = document.getElementById(sectionId);
-      section.scrollIntoView({ behavior: 'smooth' });
-    });
-  }); 
-*/
 
   return (
     
@@ -58,14 +44,6 @@ const Nav = () => {
           </span>
           <aside>BURGERS</aside>
         </a>
-    </div>
-
-    <div onClick={() => setActiveNav('#combos')} className={activeNav === '#combos' ? 'active' : ''}>
-      <a href="#combos" className="nav-link">
-        <span className="material-symbols-outlined">
-          fastfood
-        </span><aside>COMBOS</aside>
-      </a>
     </div>
 
       <div onClick={() => setActiveNav('#bebidas')} className={activeNav === '#bebidas' ? 'active' : ''}>
